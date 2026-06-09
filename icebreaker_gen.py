@@ -11,7 +11,7 @@ def generate_with_ai(name, company, trigger, api_key):
         "X-Title": "Daily AI Builds Icebreaker"
     }
     data = {
-        "model": "meta-llama/llama-3.1-8b-instruct:free",
+        "model": "google/gemma-2-9b-it:free",
         "messages": [
             {"role": "system", "content": "You are an expert in B2B outreach and prompt engineering. Write a concise, highly personalized LinkedIn connection note (under 300 characters) to a startup founder. Be direct, no fluff, no 'I hope this finds you well'. Focus on immediate value."},
             {"role": "user", "content": f"Write a LinkedIn connection note for {name} at {company}. Trigger/Context: {trigger}. Keep it under 300 characters."}
